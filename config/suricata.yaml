@@ -1,0 +1,19 @@
+%YAML 1.1
+---
+# CATATAN: Ini adalah potongan (snippet) dari berkas suricata.yaml 
+# yang dimodifikasi untuk proyek IDS AWS.
+
+# Mengarahkan Suricata untuk membaca berkas aturan kustom
+default-rule-path: /etc/suricata/rules
+rule-files:
+  - local.rules
+
+# Konfigurasi antarmuka jaringan penangkap paket (Packet Capture)
+# Dimodifikasi dari bawaan 'eth0' menjadi 'ens5' sesuai standar AWS EC2
+af-packet:
+  - interface: ens5
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+    use-mmap: yes
+    tpacket-v3: yes
