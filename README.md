@@ -58,6 +58,7 @@ Akses peladen Target melalui SSH dan jalankan skrip instalasi, atau lakukan konf
 * Pasang Grafana pada peladen Target.
 * Tambahkan sumber data (Data Source) Amazon CloudWatch pada antarmuka Grafana.
 * Buat dasbor kustom yang menampilkan metrik `NetworkIn` dan kueri log teks dari log group `Suricata-Logs`.
+* Tambahkan panel visualisasi Bar Gauge berbasis kueri analitik CloudWatch Logs Insights untuk merangking dan menampilkan 5 Alamat IP penyerang teratas secara waktu nyata.
 
 ## Simulasi Pengujian (Red Teaming)
 Untuk memvalidasi sistem, peladen penyerang (Attacker) dapat menggunakan utilitas Nmap untuk memicu sensor deteksi awan dan lokal.
