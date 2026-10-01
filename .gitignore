@@ -1,0 +1,20 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# SSH Keys & Credentials
+*.pem
+*.key
+*.pub
+id_rsa
+id_rsa.pub
+
+# Log files
+*.log
+fast.log
+eve.json
+
+# PDF Documentation source files
+*.pdf
